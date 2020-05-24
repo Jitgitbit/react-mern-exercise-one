@@ -10,3 +10,5 @@ be npm install
 
 be npm start
 fe npm start
+
+fe npm audit fix
