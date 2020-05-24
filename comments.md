@@ -7,3 +7,6 @@ fe npm install
 
 be .gitignore
 be npm install
+
+be npm start
+be npm start
