@@ -4,6 +4,8 @@ const uuid = require('uuid/v4');
 
 const app = express();
 
+const port = process.env.PORT || 5000;
+
 const DUMMY_PRODUCTS = []; // not a database, just some in-memory storage for now
 
 app.use(bodyParser.json());
@@ -48,4 +50,4 @@ app.post('/product', (req, res, next) => {
     .json({ message: 'Created new product.', product: createdProduct });
 });
 
-app.listen(5000); // start Node + Express server on port 5000
+app.listen(port, () => console.log(`Listening on :${port}, endpoint /products is supported`));  // start Node + Express server on port 5000
